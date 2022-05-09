@@ -11,4 +11,4 @@ This project was developed with the following user stories:
 
 <h2 Features to be completed </h2>
 
-To be completed. 
+To be completed... 
