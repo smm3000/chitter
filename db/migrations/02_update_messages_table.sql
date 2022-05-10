@@ -1,0 +1,1 @@
+ALTER TABLE chitter_messages ADD mytimestampcol TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
