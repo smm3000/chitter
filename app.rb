@@ -16,6 +16,18 @@ class ChitterManager < Sinatra::Base
         erb :'chitter/index'
     end 
 
+    get '/chitter/new' do
+        erb :'chitter/new'
+    end
+
+    post '/chitter' do
+        message = params['message']
+        connection = PG.connect(dbname: 'chitter_2_test')
+        connection.exec("INSERT INTO chitter_messages (message) VALUES('#{message}')")
+        redirect '/chitter'
+    end
+
+
     run! if app_file == $0
 end 
 
