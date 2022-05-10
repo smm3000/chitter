@@ -9,4 +9,11 @@ describe Post do
             expect(posts).to include("TEST POST 1")
         end 
     end
+
+    describe '.create' do
+        it 'creates a post' do
+            Post.create(message: 'TEST POST 2')
+            expect(Post.all).to include('TEST POST 2')
+        end
+    end 
 end 
