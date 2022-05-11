@@ -8,7 +8,7 @@ class ChitterManager < Sinatra::Base
     end
     
     get '/' do 
-        'Chitter'
+        'Welcome to Chitter'
     end
 
     get '/chitter' do
