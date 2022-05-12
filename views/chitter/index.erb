@@ -1,5 +1,6 @@
 <ul> 
     <% @posts.reverse.each do |post| %>
-        <li><%= post %></li>
+        <li><%= post.message%></li>
+        <li><%= post.id %></li>
     <% end %>
 </ul>
